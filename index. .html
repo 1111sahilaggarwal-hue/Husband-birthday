@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My love </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      height: 150vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url("p3.jpg") no-repeat center center fixed;
+      background-size: 100% 100%;  /* full background */
+      position: relative;
+    }
+
+img {
+      margin-top: 50px;
+      width: 250px;
+      border-radius: 15px;
+      border: 5px solid white;
+    }
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px black;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #007bff;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>My love</h1>
+    <p>
+       "Happy Birthday, my love! You are not just<br>
+      my husband but the reason my world feels complete. <br>
+      Every smile of yours makes my day brighter,<br>
+      and every dream of yours becomes my prayer. <br>
+      May this year bring you all the happiness your heart deserves,<br>
+      because you are my forever and always."
+      </p>
+    <div class="photo">
+      <img src="pooja.jpg" alt="pooja's Photo">
+      <img src="p1.jpg" alt="p1's Photo">
+      <img src="p2.jpg" alt="p2's Photo">
+    </div> 
+
+    <audio id="bgm" loop>
+      <source src="birthday.mp3" type="audio/mpeg">
+    </audio>
+    <button class="btn" onclick="document.getElementById('bgm').play()">🎵 Play Birthday Song</button>
+  </div>
+</body>
+</html>
